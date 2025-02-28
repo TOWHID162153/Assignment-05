@@ -3,100 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Web Title -->
   <title>Assignment 05</title>
+
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <!-- Manual CSS -->
   <link rel="stylesheet" href="style/styel.css">
+
   <!-- tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
+
   <!-- daisyUI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    module.exports = {
+      theme: {
+        extend: {
+          colors: {
+            'regal-blue': '#243c5a',
+            'my-btn': '#22223b',
+            }
+          }
+        }
+      }
+  </script>
 </head>
-<!-- body start -->
-<body>
-  <main>
-    <!-- headers -->
+<!-- BODY -->
+<body class="bg-[#eaf4f4] pt-6 pb-16">
+  <!-- MAIN -->
+  <main >
+    <!-- HEADER -->
     <header>
-      <!-- navbar -->
-      <div class="nav-bar md:container mx-auto">
-        <div class="navbar bg-base-100">
-          <div class="flex-1">
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+      <!-- NAV BAR -->
+      <div class="md:container mx-auto">
+        <div class="navbar bg-base-100 rounded-xl mb-6 ">
+          <!-- left part-->
+          <div class="flex-1 my-5 ml-6">
+            <!-- logo -->
+            <img class="mr-5" src="assets/logo.png" alt="nav logo">
+            <!-- text -->
+            <a class="font-poppins text-4xl font-normal">Dev<span class="font-bold">Board</span></a>
           </div>
-          <div class="flex-none">
-            <div class="dropdown dropdown-end">
-              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                <div class="indicator">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                  <span class="badge badge-sm indicator-item">8</span>
-                </div>
-              </div>
-              <div
-                tabindex="0"
-                class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-                <div class="card-body">
-                  <span class="text-lg font-bold">8 Items</span>
-                  <span class="text-info">Subtotal: $999</span>
-                  <div class="card-actions">
-                    <button class="btn btn-primary btn-block">View cart</button>
-                  </div>
-                </div>
+          <!-- right part -->
+          <div class="flex-none my-5 mr-6">
+            <!-- 1st -->
+            <div class="bg-[#F4F7FF] rounded-full ml-9">
+              <div class="flex justify-center items-center m-3">
+                <img class="w-8 h-8" src="/assets/checkbox.png" alt="nav logo">
+                <a class="font-poppins text-3xl font-bold ml-8">23</span></a>
               </div>
             </div>
-            <div class="dropdown dropdown-end">
-              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                <div class="w-10 rounded-full">
-                  <img
-                    alt="Tailwind CSS Navbar component"
-                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                </div>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li>
-                  <a class="justify-between">
-                    Profile
-                    <span class="badge">New</span>
-                  </a>
-                </li>
-                <li><a>Settings</a></li>
-                <li><a>Logout</a></li>
-              </ul>
+            <!-- 2nd -->
+            <div class="bg-[#F4F7FF] rounded-full ml-9">
+              <img class="w-10 m-3" src="/assets/theme-btn.png" alt="theme-btns">
             </div>
+            <!-- 3rd -->
+ 
           </div>
         </div>
       </div>
     </header>
+    <!-- SECTION -->
+      <section class="md:container mx-auto flex flex-row justify-between justify-between mb-16">
+          <!-- left -->
+          <div class="bg-base-100 flex-1 rounded-2xl border">
+            <p class="font-poppins font-normal text-base"></p>
+          </div>
+          <!-- right -->
+          <div class="bg-base-100 flex-none text-center rounded-2xl ml-6 border">
+            <h3 class="font-poppins font-medium text-xl mt-6 mb-4">Activity Log</h3>
+            <button class="btn bg-my-btn font-poppins font-normal text-base mb-4">Clear History</button>
+            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 mb-6 mr-4 ml-8">
+            <!-- task notification -->
+            <div class="bg-[#F4F7FF] rounder-xl mb-7 mr-4 ml-8 rounded-xl">
+              <p class="font-poppins font-normal text-base m-3">
+                You have Complete The Task Add Dark Mode at 12:48:15 PM
+              </p>
+            </div>
+            <div class="bg-[#F4F7FF] rounder-xl mb-7 mr-4 ml-8 rounded-xl">
+              <p class="font-poppins font-normal text-base m-3">
+                You have Complete The Task Add Dark Mode at 12:48:15 PM
+              </p>
+            </div>
+            <!-- task notification -->
+          </div>
+          <!-- right -->
+      </section>
   </main>
-  <script src="script/script.js"></script>
+  <!-- javaScript -->
+  <script src="test.js"></script>
+  <script src="javaScript/task.js"></script>
 </body>
 </html>
 
