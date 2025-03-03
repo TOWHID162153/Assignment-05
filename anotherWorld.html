@@ -1,0 +1,118 @@
+<!doctype html>
+<html data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Web Title -->
+  <title>Assignment 05</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+
+                  colors: {
+                      clifford: '#da373d',
+                      'allBtn': '#003554',
+                      'btnFontClr': '#fdfdff',
+                      'lightText': '#6c757d',
+                  }
+              }
+          }
+      }
+  </script>
+
+</head>
+<body class="bg-[#eaf4f4] font-poppins py-6">
+            <!-- Header -->
+            <header class="md:container mx-auto">
+                <!-- NAV BAR -->
+                <div class="mb-6">
+                  <div class="navbar bg-base-100 rounded-2xl p-0">
+                    <!-- left part-->
+                    <div class="flex-1 my-5 ml-6">
+                      <!-- logo -->
+                      <img src="assets/logo.png" alt="nav logo">
+                      <!-- text -->
+                      <a class="font-poppins text-4xl font-normal ml-5">Dev<span class="font-bold">Board</span></a>
+                    </div>
+                    <!-- right part -->
+                    <div class="flex-none my-5 mr-6">
+                      <div id="back-to-home" class="btn">Back to Home</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End -->
+            </header>
+            <!-- Qus Part -->
+            <main class="md:container mx-auto">
+                <!-- 1 -->
+                <div class="bg-[#9bc1bc] rounded-2xl drop-shadow-md p-6 my-4">
+                    <!-- qus -->
+                <h3 class="font-poppins font-bold text-3xl">Question-1 : What are the different ways to select an element in the DOM?
+                </h3>
+                    <!-- HR line -->
+                   <hr class="my-4">
+                    <!-- ans -->
+                <p class="font-poppins font-normal text-base text-lightText">getElementById, getElementsByClassName, getElementsByTagName, querySelector & querySelectorAll</p>
+                </div>
+                <!-- 2 -->
+                <div class="bg-[#9bc1bc] rounded-2xl drop-shadow-md p-6 my-4">
+                    <!-- qus -->
+                <h3 class="font-poppins font-bold text-3xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h3>
+                    <!-- HR line -->
+                   <hr class="my-4">
+                    <!-- ans -->
+                <p class="font-poppins font-normal text-base text-lightText">1. innerHtml returns all text, including html tags, that is contained by an element.    2.innerText returns all text contained by an element and all its child elements.
+                    3. textContents is all text contained by an element and all its children that are for formatting purposes only.
+
+                </p>
+                </div>
+                <!-- 3 -->
+                <div class="bg-[#9bc1bc] rounded-2xl drop-shadow-md p-6 my-4">
+                    <!-- qus -->
+                <h3 class="font-poppins font-bold text-3xl ">Question-3: What is event delegation in the DOM?
+                </h3>
+                    <!-- HR line -->
+                   <hr class="my-4">
+                    <!-- ans -->
+                <p class="font-poppins font-normal text-base text-lightText">Event delegation in JavaScript is a pattern that efficiently handles events. Events can be added to a parent element instead of adding to every single element. It refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.</p>
+                </div>
+                <!-- 4 -->
+                <div class="bg-[#9bc1bc] rounded-2xl drop-shadow-md p-6 my-4">
+                    <!-- qus -->
+                <h3 class="font-poppins font-bold text-3xl">Question-4: What is event bubbling in the DOM?
+                </h3>
+                    <!-- HR line -->
+                   <hr class="my-5">
+                    <!-- ans -->
+                <p class="font-poppins font-normal text-base text-lightText">Event bubbling is a concept in the DOM (Document Object Model) event propagation mechanism where an event that occurs on a nested element first triggers on that element and then propagates (or "bubbles up") to its parent elements and then further up to the root (document).</p>
+                </div>
+                <!-- 5 -->
+                <div class="bg-[#9bc1bc] rounded-2xl drop-shadow-md p-6 my-4">
+                    <!-- qus -->
+                <h3 class="font-poppins font-bold text-3xl">Question-1 : How do you create, add, and remove elements using JavaScript?
+                </h3>
+                    <!-- HR line -->
+                   <hr class="my-4">
+                    <!-- ans -->
+                <p class="font-poppins font-normal text-base text-lightText">1. Use document.createElement(tagName) to create a new element. 2.To add a new element to the HTML DOM, must create the element (element node) first, and then append it to an existing element. 3. Element: remove() method. This feature is well established and works across many devices and browser versions. It's been available across browsers since July 2015. The Element. remove() method removes the element from the DOM.
+                </p>
+                </div>
+            </main>
+            <script src="JavaScript/backToHome.js"></script>
+    </body>
+</html>

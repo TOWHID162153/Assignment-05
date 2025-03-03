@@ -1,1 +1,0 @@
-console.log("Ore dara age hati dik pare");
